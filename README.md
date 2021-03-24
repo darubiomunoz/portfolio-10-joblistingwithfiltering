@@ -36,7 +36,9 @@ Project Link: [https://github.com/darubiomunoz/portfolio-10-joblistingwithfilter
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#">Status</a></li>
+    <li><a href="#status">Status</a></li>
+    <li><a href="#what-i-learned">What I learned</a></li>
+    <li><a href="#continued-development">Continued Development</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -54,7 +56,7 @@ As I write this README file, I'm starting this project and I'm very excited beca
 
 I believe it's going to be difficult at first but I'm sure I can find a way to make it until the end of the project successfully with the help of my usual strategy search-read-ask :smile:
 
-Also I'll be adding two sections to my README from now and on at final stage of the project to tell my experience about **What I learnt** and **Continued Development**.
+Also I'll be adding two sections to my README from now and on at final stage of the project to tell my experience about **What I learned** and **Continued Development**.
 ### Built With :computer:
 
 This component is developed with:
@@ -91,27 +93,30 @@ If you want to check out the website in production with github pages visit the l
     yaml install -g create-react-app
    ```
 
-
 2. Clone the repo
    ```sh
-   git clone https://github.com/darubiomunoz/darubiomunoz.github.io.git
+   git clone https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering.git
    ```
    ```sh
-   git clone git@github.com:darubiomunoz/darubiomunoz.github.io.git
+   git clone git@github.com:darubiomunoz/portfolio-10-joblistingwithfiltering.git
    ```
    ```sh
-   gh repo clone darubiomunoz/darubiomunoz.github.io
+   gh repo clone darubiomunoz/portfolio-10-joblistingwithfiltering
    ```
 
+3. Install all the dependencies required with:
+   ```sh
+   npm install
+   ```
 
-3. Run the react development server:
+4. Run the react development server:
     ```sh
     npm run start
     ```
 <!-- USAGE EXAMPLES -->
 ## 3. Usage :star2:
 
-Feel free to download the code if you need a template for your own portfolio and modify it as you want to fit your project, just remember to install all the required dependencies to run it properly.
+Feel free to download the code if you need a template for your own ***job listing*** and modify it as you want to fit your project, just remember to install all the required dependencies to run it properly.
 
 _For more knowledge, please refer to the [Documentation](https://reactjs.org/)_
 
@@ -131,13 +136,25 @@ Contributions are what make the open source community such an amazing place to b
 
 The project is `Under Development`.
 
+<!-- WHAT I LEARNED -->
+## 6. What I learned :mortar_board:
+
+I'll fill this section at the end of the project.
+
+
+<!-- CONTINUED DEVELOPMENT -->
+## 7. Continued development :books:
+
+I'll fill this section at the end of the project.
+
+
 <!-- LICENSE -->
-## 6. License :memo:
+## 8. License :memo:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-## 7. Contact :e-mail:
+## 9. Contact :e-mail:
 
 Diego Rubio
 [Linkedin](https://www.linkedin.com/in/darmdev/)
@@ -146,7 +163,7 @@ darubiomunoz@gmail.com
 Project Link: [https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering](https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering)
 
 <!-- ACKNOWLEDGEMENTS -->
-## 8. Acknowledgements :clap:
+## 10. Acknowledgements :clap:
 
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
@@ -156,7 +173,8 @@ Project Link: [https://github.com/darubiomunoz/portfolio-10-joblistingwithfilter
 * [React-React-App](https://create-react-app.dev/) 
 * [React DOM](https://reactjs.org/docs/react-dom.html)
 * [React Scripts](https://create-react-app.dev/docs/available-scripts/)
-* [React Router](https://reactrouter.com/web/guides/quick-start)
+* [Redux](https://redux.js.org/)
+* [React Redux](https://react-redux.js.org/)
 * [Normalize](https://necolas.github.io/normalize.css/)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
