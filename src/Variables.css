@@ -1,0 +1,46 @@
+:root {
+  --color-option1: hsl(180, 29%, 50%);
+  --color-option2: hsl(180, 52%, 96%);
+  --color-option3: hsl(180, 31%, 95%);
+  --color-option4: hsl(180, 8%, 52%);
+  --color-option5: hsl(180, 14%, 20%);
+  --color-option6: #fff;
+  --color-option7: #000;
+
+  --font-family: "Spartan", sans-serif;
+
+  --font-size-small: 1rem;
+  --font-size-regular: 1.2rem;
+  --font-size-normal: 1.6rem;
+  --font-size-medium: 2.4rem;
+  --font-size-large: 3.2rem;
+  --font-size-extralarge: 4.8rem;
+
+  --font-weight-lighter: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+
+  --padding-small: 1rem;
+  --padding-regular: 2rem;
+  --padding-normal: 3rem;
+  --padding-large: 4rem;
+  --padding-larger: 5rem;
+
+  --margin-small: 1rem;
+  --margin-regular: 2rem;
+  --margin-normal: 3rem;
+  --margin-large: 4rem;
+  --margin-larger: 5rem;
+
+  --zindex-background: 0;
+  --zindex-normal: 10;
+  --zindex-dropdown: 1000;
+  --zindex-sticky: 1020;
+  --zindex-fixed: 1030;
+  --zindex-modal-backdrop: 1040;
+  --zindex-modal: 1050;
+  --zindex-popover: 1060;
+  --zindex-tooltip: 1070;
+}
