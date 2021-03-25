@@ -1,9 +1,12 @@
+import React from 'react';
 import './App.css';
+
+import JobList from './pages/JobList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Ohh shit. Here we go again...</h1>
+      <JobList />
     </div>
   );
 }
