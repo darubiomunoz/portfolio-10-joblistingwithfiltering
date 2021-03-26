@@ -1,0 +1,26 @@
+.joblist {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-option3);
+}
+
+.joblist__header {
+  width: inherit;
+  max-width: inherit;
+  height: 30vh;
+  background-color: var(--color-option1);
+}
+
+.joblist__background {
+  width: 100%;
+  height: 100%;
+}
+
+.background--header {
+  width: 100%;
+  height: 100%;
+}
