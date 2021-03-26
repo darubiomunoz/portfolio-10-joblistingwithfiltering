@@ -16,7 +16,9 @@ const fetchData = async URL => {
   return data;
 }
 
-fetchData(DATA_URL);
+const data = fetchData(DATA_URL)
+
+console.log(data);
 
 ReactDOM.render(
   <React.StrictMode>
