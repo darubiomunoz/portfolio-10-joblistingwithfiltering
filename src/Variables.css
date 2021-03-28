@@ -9,6 +9,7 @@
 
   --font-family: 'Spartan', sans-serif;
 
+  --font-size-extrasmall: .5rem;
   --font-size-small: 1rem;
   --font-size-regular: 1.2rem;
   --font-size-normal: 1.6rem;
@@ -22,6 +23,7 @@
   --font-weight-bold: 700;
   --font-weight-bolder: 900;
 
+  --spacing-extrasmall: .5rem;
   --spacing-small: 1rem;
   --spacing-regular: 2rem;
   --spacing-normal: 3rem;

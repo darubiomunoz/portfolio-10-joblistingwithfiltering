@@ -5,7 +5,7 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: var(--color-option3);
+  background-color: var(--color-option2);
 }
 
 .joblist__header {

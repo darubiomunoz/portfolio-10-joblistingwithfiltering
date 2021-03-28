@@ -12,14 +12,19 @@ const JobOffer = () => {
           alt="company's logo"
         />
       </figure>
-      <div className="joboffer__item">
-        <section className="joboffer__info">
-          <h2 className="joboffer__companyname">Company Name</h2>
-          <h3 className="joboffer__title">Job title</h3>
-          <div className="joboffer__details">
-            <p className="joboffer__status">1d ago</p>
-            <p className="joboffer__status">Fulltime</p>
-            <p className="joboffer__status">USA only</p>
+      <section className="joboffer__item">
+        <section className="joboffer__details">
+          <div className="joboffer__info">
+            <h2 className="joboffer__company">Photosnap</h2>
+            {false && <p>Featured</p>}
+          </div>
+          <h3 className="joboffer__title">Senior Frontend Developer</h3>
+          <div className="joboffer__extra">
+            <p className="joboffer__status1">1d ago</p>
+            &#8226;
+            <p className="joboffer__status2">Fulltime</p>
+            &#8226;
+            <p className="joboffer__status3">USA only</p>
           </div>
         </section>
         <section className="joboffer__keywords">
@@ -29,7 +34,7 @@ const JobOffer = () => {
           <p className="joboffer__badge">CSS</p>
           <p className="joboffer__badge">JavaScript</p>
         </section>
-      </div>
+      </section>
     </div>
   );
 }

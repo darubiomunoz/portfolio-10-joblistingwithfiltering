@@ -1,28 +1,27 @@
 .joboffer {
   width: 80%;
-  height: 8rem;
+  height: fit-content;
   position: relative;
   padding: var(--spacing-small);
   padding-top: var(--spacing-regular);
   margin-top: var(--spacing-regular);
   border-radius: var(--border-radius-small);
-  background-color:var(--color-option3);
-  box-shadow: 11px 11px 50px -2px var(--color-option4);
-  -webkit-box-shadow: 11px 11px 50px -2px var(--color-option4);
-  -moz-box-shadow: 11px 11px 50px -2px var(--color-option4);
+  background-color: var(--color-option3);
+  -webkit-box-shadow: 0px 10px 15px 4px rgba(123, 142, 142, 0.33);
+  box-shadow: 0px 10px 15px 4px rgba(123, 142, 142, 0.33);
 }
 
 .joboffer:focus,
 .joboffer:hover {
-  border-left: .3rem solid var(--color-option1);
+  border-left: 0.3rem solid var(--color-option1);
 }
 
 .joboffer__image--container {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   position: absolute;
-  top: -1.75rem;
-  left: 1.5rem;
+  top: -1.5rem;
+  left: 1rem;
 }
 
 .joboffer__logo {
@@ -30,4 +29,52 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.joboffer__item {
+}
+
+.joboffer__details {
+  padding-bottom: var(--spacing-small);
+  border-bottom: 0.1rem solid var(--color-option4);
+}
+
+.joboffer__info {
+  display: flex;
+}
+
+.joboffer__company {
+  margin-right: var(--spacing-extrasmall);
+  margin-bottom: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
+  color: var(--color-option1);
+}
+
+.joboffer__title {
+  margin-bottom: var(--spacing-extrasmall);
+  font-size: var(--spacing-small);
+}
+
+.joboffer__extra {
+  display: flex;
+}
+
+.joboffer__status1 {
+  margin-right: var(--spacing-extrasmall);
+  color: var(--color-option4);
+}
+
+.joboffer__status2 {
+  margin-right: var(--spacing-extrasmall);
+  margin-left: var(--spacing-extrasmall);
+  color: var(--color-option4);
+}
+.joboffer__status3 {
+  margin-left: var(--spacing-extrasmall);
+  color: var(--color-option4);
+}
+
+.joboffer__keywords {
+  padding-top: var(--spacing-small);
+  display: flex;
 }
