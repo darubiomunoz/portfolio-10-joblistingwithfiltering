@@ -4,8 +4,13 @@
   position: relative;
   margin-top: var(--spacing-regular);
   border-radius: var(--border-radius-small);
-  background-color: red;
+  background-color:var(--color-option3);
   box-shadow: 11px 11px 50px -2px var(--color-option4);
   -webkit-box-shadow: 11px 11px 50px -2px var(--color-option4);
   -moz-box-shadow: 11px 11px 50px -2px var(--color-option4);
+}
+
+.joboffer:focus,
+.joboffer:hover {
+  border-left: .3rem solid var(--color-option1);
 }
