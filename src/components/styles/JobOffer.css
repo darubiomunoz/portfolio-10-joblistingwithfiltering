@@ -1,0 +1,10 @@
+.joboffer {
+  width: 80%;
+  height: 8rem;
+  margin-top: var(--spacing-regular);
+  border-radius: var(--border-radius-small);
+  background-color: red;
+  box-shadow: 11px 11px 50px -2px var(--color-option4);
+  -webkit-box-shadow: 11px 11px 50px -2px var(--color-option4);
+  -moz-box-shadow: 11px 11px 50px -2px var(--color-option4);
+}

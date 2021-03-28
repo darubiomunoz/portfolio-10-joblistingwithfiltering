@@ -3,7 +3,9 @@ import './styles/JobOffer.css';
 
 const JobOffer = () => {
   return (
-    <p>JobOffer</p>
+    <div className="joboffer">
+
+    </div>
   );
 }
 

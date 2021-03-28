@@ -22,17 +22,11 @@
   --font-weight-bold: 700;
   --font-weight-bolder: 900;
 
-  --padding-small: 1rem;
-  --padding-regular: 2rem;
-  --padding-normal: 3rem;
-  --padding-large: 4rem;
-  --padding-larger: 5rem;
-
-  --margin-small: 1rem;
-  --margin-regular: 2rem;
-  --margin-normal: 3rem;
-  --margin-large: 4rem;
-  --margin-larger: 5rem;
+  --spacing-small: 1rem;
+  --spacing-regular: 2rem;
+  --spacing-normal: 3rem;
+  --spacing-large: 4rem;
+  --spacing-larger: 5rem;
 
   --border-radius-small: .5rem;
   --border-radius-normal: 1rem;
