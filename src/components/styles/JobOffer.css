@@ -1,6 +1,7 @@
 .joboffer {
   width: 80%;
   height: 8rem;
+  position: relative;
   margin-top: var(--spacing-regular);
   border-radius: var(--border-radius-small);
   background-color: red;
