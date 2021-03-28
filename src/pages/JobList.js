@@ -21,7 +21,7 @@ const JobList = () => {
           />
         </picture>
       </header>
-      <main>
+      <main className="joblist__main">
         <Filter />
         <JobOffer />
       </main>

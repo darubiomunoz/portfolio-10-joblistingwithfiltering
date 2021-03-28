@@ -3,7 +3,9 @@ import './styles/Filter.css';
 
 const Filter = () => {
   return (
-    <h1>Filter</h1>
+    <div className="filter">
+      <button className="filter__button">Filter</button>
+    </div>
   );
 }
 

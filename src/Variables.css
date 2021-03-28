@@ -13,7 +13,7 @@
   --font-size-regular: 1.2rem;
   --font-size-normal: 1.6rem;
   --font-size-medium: 2.4rem;
-  --font-size-large: 3.2rem;
+  --font-size-large: 3.2rem; 
   --font-size-extralarge: 4.8rem;
 
   --font-weight-lighter: 200;
@@ -33,6 +33,11 @@
   --margin-normal: 3rem;
   --margin-large: 4rem;
   --margin-larger: 5rem;
+
+  --border-radius-small: .5rem;
+  --border-radius-normal: 1rem;
+  --border-radius-large: 2rem;
+  --border-radius-circle: 50%;
 
   --zindex-background: 0;
   --zindex-normal: 10;

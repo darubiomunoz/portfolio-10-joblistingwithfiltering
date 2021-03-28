@@ -24,6 +24,7 @@ let data;
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     data = await fetchData(DATA_URL);
+    console.log(data);
   } catch (error) {
     console.error(error);
   }

@@ -3,7 +3,7 @@ import './styles/JobOffer.css';
 
 const JobOffer = () => {
   return (
-    <h1>JobOffer</h1>
+    <p>JobOffer</p>
   );
 }
 
