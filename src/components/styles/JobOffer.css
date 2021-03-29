@@ -77,4 +77,16 @@
 .joboffer__keywords {
   padding-top: var(--spacing-small);
   display: flex;
+  flex-wrap: wrap;
+}
+
+.joboffer__badge {
+  padding: var(--spacing-extrasmall);
+  margin-right: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+  font-size: var(--font-size-extrasmall);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-extrasmall);
+  background-color: var(--color-option8);
+  color: var(--color-option1);
 }

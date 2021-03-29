@@ -1,4 +1,4 @@
-:root { 
+:root {
   --color-option1: hsl(180, 29%, 50%);
   --color-option2: hsl(180, 52%, 96%);
   --color-option3: hsl(180, 31%, 95%);
@@ -6,15 +6,16 @@
   --color-option5: hsl(180, 14%, 20%);
   --color-option6: #fff;
   --color-option7: #000;
+  --color-option8: hsl(180, 29%, 50%, 0.3);
 
-  --font-family: 'Spartan', sans-serif;
+  --font-family: "Spartan", sans-serif;
 
-  --font-size-extrasmall: .5rem;
+  --font-size-extrasmall: 0.5rem;
   --font-size-small: 1rem;
   --font-size-regular: 1.2rem;
   --font-size-normal: 1.6rem;
   --font-size-medium: 2.4rem;
-  --font-size-large: 3.2rem; 
+  --font-size-large: 3.2rem;
   --font-size-extralarge: 4.8rem;
 
   --font-weight-lighter: 200;
@@ -23,14 +24,15 @@
   --font-weight-bold: 700;
   --font-weight-bolder: 900;
 
-  --spacing-extrasmall: .5rem;
+  --spacing-extrasmall: 0.5rem;
   --spacing-small: 1rem;
   --spacing-regular: 2rem;
   --spacing-normal: 3rem;
   --spacing-large: 4rem;
   --spacing-larger: 5rem;
 
-  --border-radius-small: .5rem;
+  --border-radius-extrasmall: 0.25rem;
+  --border-radius-small: 0.5rem;
   --border-radius-normal: 1rem;
   --border-radius-large: 2rem;
   --border-radius-circle: 50%;
