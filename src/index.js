@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
+import store from './app/store';
 
 import "./Variables.css";
 import "./index.css";
 
 import App from "./App";
-import reducer from "./reducers/";
 import reportWebVitals from "./reportWebVitals";
 
 /* const DATA_URL = "https://api.jsonbin.io/b/605d1c7c7c9f775f63899095/10";
@@ -30,10 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error(error);
   }
 }); */
-
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const store = createStore(reducer, applyMiddleware(thunk), composeEnhancers());
 
 ReactDOM.render(
   <Provider store={store}>
