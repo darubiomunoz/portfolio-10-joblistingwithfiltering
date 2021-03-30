@@ -1,13 +1,15 @@
 import React from "react";
-import './styles/JobList.css';
+import { connect } from "react-redux";
+import "./styles/JobList.css";
 
-import Filter from '../components/Filter';
-import JobOffer from '../components/JobOffer';
+import Filter from "../components/Filter";
+import JobOffer from "../components/JobOffer";
 
-import headerMobile from '../assets/images/bg-header-mobile.svg';
-import headerDesktop from '../assets/images/bg-header-desktop.svg';
+import headerMobile from "../assets/images/bg-header-mobile.svg";
+import headerDesktop from "../assets/images/bg-header-desktop.svg";
 
-const JobList = () => {
+const JobList = ({ joboffers }) => {
+  console.log(joboffers)
   return (
     <div className="joblist">
       <header className="joblist__header">
@@ -29,4 +31,10 @@ const JobList = () => {
   );
 };
 
-export default JobList;
+let mapStateToProps = async (state) => {
+  return {
+    joboffers: await state.joboffers,
+  }
+}
+
+export default connect(mapStateToProps, null)(JobList);

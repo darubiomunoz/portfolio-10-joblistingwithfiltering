@@ -10,7 +10,7 @@ import App from "./App";
 import reducer from './reducers/';
 import reportWebVitals from "./reportWebVitals";
 
-const DATA_URL = "https://api.jsonbin.io/b/605d1c7c7c9f775f63899095";
+const DATA_URL = "https://api.jsonbin.io/b/605d1c7c7c9f775f63899095/10";
 
 const fetchData = async URL => {
   const response = await fetch(URL);

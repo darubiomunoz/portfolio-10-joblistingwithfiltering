@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/JobOffer.css';
 
 const JobOffer = () => {
+
   return (
     <div className="joboffer">
       <figure className="joboffer__image--container">

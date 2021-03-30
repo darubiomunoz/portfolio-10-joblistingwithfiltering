@@ -1,5 +1,5 @@
-[
-  {
+{
+  "joboffers": [{
     "id": 1,
     "company": "Photosnap",
     "logo": "https://i.postimg.cc/Y2xsG7wk/photosnap.png",
@@ -148,5 +148,5 @@
     "location": "Worldwide",
     "languages": ["JavaScript"],
     "tools": ["React", "Sass"]
-  }
-]
+  }]
+}
