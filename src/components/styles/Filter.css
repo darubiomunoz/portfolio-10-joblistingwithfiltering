@@ -1,8 +1,9 @@
 .filter {
-  width: 4rem;
+  width: 80%;
   height: 2rem;
+  padding: var(--spacing-extrasmall) var(--spacing-small);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
   top: -1rem;
@@ -15,8 +16,8 @@
 }
 
 .filter__button {
-  width: 50%;
-  height: 50%;
+  width: fit-content;
+  height: fit-content;
   border-style: none;
   background-color: transparent;
   color: var(--color-option4);
