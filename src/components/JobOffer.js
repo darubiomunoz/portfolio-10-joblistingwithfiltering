@@ -16,12 +16,12 @@ const JobOffers = () => {
             alt="company's logo"
           />
         </figure>
-        <section className="joboffer__item">
+        <section className="joboffer__item"> 
           <section className="joboffer__details">
             <div className="joboffer__info">
               <h2 className="joboffer__company">{joboffer.company}</h2>
-              {joboffer.new && <p>New!</p>}
-              {joboffer.featured && <p>Featured</p>}
+              {joboffer.new && <p className="joboffer__new">New!</p>}
+              {joboffer.featured && <p className="joboffer__featured">Featured</p>}
             </div>
             <h3 className="joboffer__title">{joboffer.position}</h3>
             <div className="joboffer__extra">

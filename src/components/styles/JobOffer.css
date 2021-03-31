@@ -31,23 +31,42 @@
   object-position: center;
 }
 
-.joboffer__item {
-}
-
 .joboffer__details {
   padding-bottom: var(--spacing-small);
   border-bottom: 0.1rem solid var(--color-option4);
 }
 
 .joboffer__info {
+  margin-bottom: var(--spacing-extrasmall);
   display: flex;
+  align-items: center;
 }
 
 .joboffer__company {
   margin-right: var(--spacing-extrasmall);
-  margin-bottom: var(--spacing-extrasmall);
   font-size: var(--font-size-extrasmall);
   color: var(--color-option1);
+}
+
+.joboffer__new {
+  padding: var(--spacing-extrasmall);
+  margin-right: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-normal);
+  text-transform: uppercase;
+  background-color: var(--color-option1);
+  color: var(--color-option3);
+}
+
+.joboffer__featured {
+  padding: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-normal);
+  text-transform: uppercase;
+  background-color: var(--color-option5);
+  color: var(--color-option3);
 }
 
 .joboffer__title {
