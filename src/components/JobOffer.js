@@ -16,12 +16,14 @@ const JobOffers = () => {
             alt="company's logo"
           />
         </figure>
-        <section className="joboffer__item"> 
+        <section className="joboffer__item">
           <section className="joboffer__details">
             <div className="joboffer__info">
               <h2 className="joboffer__company">{joboffer.company}</h2>
               {joboffer.new && <p className="joboffer__new">New!</p>}
-              {joboffer.featured && <p className="joboffer__featured">Featured</p>}
+              {joboffer.featured && (
+                <p className="joboffer__featured">Featured</p>
+              )}
             </div>
             <h3 className="joboffer__title">{joboffer.position}</h3>
             <div className="joboffer__extra">
@@ -36,10 +38,18 @@ const JobOffers = () => {
             <p className="joboffer__badge">{joboffer.role}</p>
             <p className="joboffer__badge">{joboffer.level}</p>
             {joboffer.languages.map((language, index) => {
-              return <p className="joboffer__badge" key={index}>{language}</p>;
+              return (
+                <p className="joboffer__badge" key={index}>
+                  {language}
+                </p>
+              );
             })}
             {joboffer.tools.map((tool, index) => {
-              return <p className="joboffer__badge" key={index}>{tool}</p>;
+              return (
+                <p className="joboffer__badge" key={index}>
+                  {tool}
+                </p>
+              );
             })}
           </section>
         </section>
