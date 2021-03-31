@@ -1,11 +1,18 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import "./styles/Filter.css";
 
+import { deleteFilter } from '../features/joboffers/filterSlice';
+
 const Filter = () => {
+  const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
   console.log(filters);
+
+  const handleDeleteFilter = (event) => {
+    console.log(event);
+  }
 
   return (
     <>
@@ -16,12 +23,17 @@ const Filter = () => {
               return (
                 <div className="filter__badge" key={nanoid()}>
                   <p className="filter__name">{filter}</p>
-                  <button className="filter__button--badge">X</button>
+                  <button
+                    className="filter__button--badge"
+                    onClick={(event) => handleDeleteFilter(event)}
+                  >
+                    X
+                  </button>
                 </div>
               );
             })}
           </div>
-          <button className="filter__button">Clear</button>
+          <button className="filter__button" type="button">Clear</button>
         </div>
       )}
     </>
