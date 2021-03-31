@@ -2,6 +2,7 @@
   width: 80%;
   height: fit-content;
   position: relative;
+  margin-bottom: var(--spacing-normal);
   padding: var(--spacing-small);
   padding-top: var(--spacing-regular);
   border-radius: var(--border-radius-small);
