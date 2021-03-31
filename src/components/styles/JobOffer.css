@@ -4,7 +4,6 @@
   position: relative;
   padding: var(--spacing-small);
   padding-top: var(--spacing-regular);
-  margin-top: var(--spacing-regular);
   border-radius: var(--border-radius-small);
   background-color: var(--color-option3);
   -webkit-box-shadow: 0px 10px 15px 4px rgba(123, 142, 142, 0.33);
