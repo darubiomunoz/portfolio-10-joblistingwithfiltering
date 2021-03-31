@@ -35,11 +35,11 @@ const JobOffers = () => {
           <section className="joboffer__keywords">
             <p className="joboffer__badge">{joboffer.role}</p>
             <p className="joboffer__badge">{joboffer.level}</p>
-            {joboffer.languages.map((language) => {
-              return <p className="joboffer__badge">{language}</p>;
+            {joboffer.languages.map((language, index) => {
+              return <p className="joboffer__badge" key={index}>{language}</p>;
             })}
-            {joboffer.tools.map((tool) => {
-              return <p className="joboffer__badge">{tool}</p>;
+            {joboffer.tools.map((tool, index) => {
+              return <p className="joboffer__badge" key={index}>{tool}</p>;
             })}
           </section>
         </section>
