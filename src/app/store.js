@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import jobOffersReducer from "../features/joboffers/jobOffersSlice";
-import filterReducer from "../features/joboffers/filterSlice";
+import filtersReducer from "../features/filters/filtersSlice";
 
-export default configureStore({
+const store =  configureStore({
   reducer: {
     joboffers: jobOffersReducer,
-    filters: filterReducer,
+    filters: filtersReducer,
   },
 });
+
+export default store;

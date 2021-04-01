@@ -7,11 +7,14 @@ const filterSlice = createSlice({
   initialState,
   reducers: {
     deleteFilter: (state, action) => {
-      state.filters.filter(filter => filter !== action.payload);
+      return state.filter(item => item !== action.payload.category);
+    },
+    clearFilter: (state) => {
+      return state = [];
     }
   }
 });
 
-export const { deleteFilter } = filterSlice.actions;
+export const { deleteFilter, clearFilter } = filterSlice.actions;
 
 export default filterSlice.reducer;

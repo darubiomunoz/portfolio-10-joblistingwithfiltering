@@ -3,16 +3,18 @@ import { useSelector, useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import "./styles/Filter.css";
 
-import { deleteFilter } from '../features/joboffers/filterSlice';
+import { deleteFilter, clearFilter } from "../features/filters/filtersSlice";
 
 const Filter = () => {
-  const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
-  console.log(filters);
+  const dispatch = useDispatch();
 
   const handleDeleteFilter = (event) => {
-    console.log(event);
-  }
+    const category = event.target.parentNode.firstChild.firstChild.data;
+    dispatch(deleteFilter({ category }));
+  };
+
+  const handleClearFilter = () => dispatch(clearFilter());
 
   return (
     <>
@@ -25,7 +27,8 @@ const Filter = () => {
                   <p className="filter__name">{filter}</p>
                   <button
                     className="filter__button--badge"
-                    onClick={(event) => handleDeleteFilter(event)}
+                    type="button"
+                    onClick={event => handleDeleteFilter(event)}
                   >
                     X
                   </button>
@@ -33,7 +36,9 @@ const Filter = () => {
               );
             })}
           </div>
-          <button className="filter__button" type="button">Clear</button>
+          <button className="filter__button" type="button" onClick={handleClearFilter}>
+            Clear
+          </button>
         </div>
       )}
     </>
