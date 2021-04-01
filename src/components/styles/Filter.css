@@ -43,6 +43,7 @@
   border-bottom-right-radius: var(--border-radius-extrasmall);
   background-color: var(--color-option1);
   color: var(--color-option3);
+  cursor: pointer;
 }
 
 .filter__button {
@@ -52,4 +53,5 @@
   background-color: transparent;
   color: var(--color-option4);
   font-weight: var(--font-weight-bold);
+  cursor: pointer;
 }

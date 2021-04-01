@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./styles/JobOffer.css";
 
-import { addFilter } from '../features/filters/filtersSlice';
+import { addFilter } from "../features/filters/filtersSlice";
+import { filterBy, noFiltersApplied } from "../features/joboffers/jobOffersSlice";
 
 const JobOffers = () => {
   const dispatch = useDispatch();
   const joboffers = useSelector((state) => state.joboffers);
-  const filters = useSelector(state => state.filters);
+  const filters = useSelector((state) => state.filters);
 
-  const handleAddFilter = event => {
+  const handleAddFilter = (event) => {
     const category = event.target.innerText;
-    console.log(event.target.innerText);
 
-    if(!filters.includes(category)) dispatch(addFilter({ category }));
-  }
+    if (!filters.includes(category)) dispatch(addFilter({ category }));
+  };
+
+  useEffect(() => {
+    if (filters.length === 0) dispatch(noFiltersApplied());
+    if (filters.length > 0) dispatch(filterBy({ filters: filters }));
+  }, [filters]);
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (
