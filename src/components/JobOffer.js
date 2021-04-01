@@ -1,9 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./styles/JobOffer.css";
 
+import { addFilter } from '../features/filters/filtersSlice';
+
 const JobOffers = () => {
+  const dispatch = useDispatch();
   const joboffers = useSelector((state) => state.joboffers);
+  const filters = useSelector(state => state.filters);
+
+  const handleAddFilter = event => {
+    const category = event.target.innerText;
+    console.log(event.target.innerText);
+
+    if(!filters.includes(category)) dispatch(addFilter({ category }));
+  }
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (
@@ -35,18 +46,36 @@ const JobOffers = () => {
             </div>
           </section>
           <section className="joboffer__keywords">
-            <p className="joboffer__badge">{joboffer.role}</p>
-            <p className="joboffer__badge">{joboffer.level}</p>
+            <p
+              className="joboffer__badge"
+              onClick={(event) => handleAddFilter(event)}
+            >
+              {joboffer.role}
+            </p>
+            <p
+              className="joboffer__badge"
+              onClick={(event) => handleAddFilter(event)}
+            >
+              {joboffer.level}
+            </p>
             {joboffer.languages.map((language, index) => {
               return (
-                <p className="joboffer__badge" key={index}>
+                <p
+                  className="joboffer__badge"
+                  key={index}
+                  onClick={(event) => handleAddFilter(event)}
+                >
                   {language}
                 </p>
               );
             })}
             {joboffer.tools.map((tool, index) => {
               return (
-                <p className="joboffer__badge" key={index}>
+                <p
+                  className="joboffer__badge"
+                  key={index}
+                  onClick={(event) => handleAddFilter(event)}
+                >
                   {tool}
                 </p>
               );
