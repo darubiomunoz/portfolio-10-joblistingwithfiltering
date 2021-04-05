@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
   {
@@ -157,22 +157,18 @@ const jobOffersSlice = createSlice({
   name: "joboffers",
   initialState,
   reducers: {
-    noFiltersApplied: (state) => state = initialState,
+    noFiltersApplied: (state) => (state = initialState),
     filterBy: (state, action) => {
+      const { filters } = action.payload;
+
       return state.filter((joboffer) => {
-        if (action.payload.filters.includes(joboffer.role)) return joboffer;
-        if (action.payload.filters.includes(joboffer.level)) return joboffer;
-        if (action.payload.filters.includes(joboffer.languages[0]))
-          return joboffer;
-        if (action.payload.filters.includes(joboffer.languages[1]))
-          return joboffer;
-        if (action.payload.filters.includes(joboffer.languages[2]))
-          return joboffer;
+        if (filters.includes(joboffer.role)) return joboffer;
+        else if (filters.includes(joboffer.level)) return joboffer;
       });
-    }
-  }
+    },
+  },
 });
 
 export const { filterBy, noFiltersApplied } = jobOffersSlice.actions;
 
-export default jobOffersSlice.reducer; 
+export default jobOffersSlice.reducer;

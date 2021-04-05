@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./styles/JobOffer.css";
 
-import { addFilter } from "../features/filters/filtersSlice";
+import { addCategory } from "../features/filters/filtersSlice";
 import { filterBy, noFiltersApplied } from "../features/joboffers/jobOffersSlice";
 
 const JobOffers = () => {
@@ -10,10 +10,9 @@ const JobOffers = () => {
   const joboffers = useSelector((state) => state.joboffers);
   const filters = useSelector((state) => state.filters);
 
-  const handleAddFilter = (event) => {
+  const handleAddCategory = (event) => {
     const category = event.target.innerText;
-
-    if (!filters.includes(category)) dispatch(addFilter({ category }));
+    dispatch(addCategory({ category }));
   };
 
   useEffect(() => {
@@ -53,13 +52,13 @@ const JobOffers = () => {
           <section className="joboffer__keywords">
             <p
               className="joboffer__badge"
-              onClick={(event) => handleAddFilter(event)}
+              onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.role}
             </p>
             <p
               className="joboffer__badge"
-              onClick={(event) => handleAddFilter(event)}
+              onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.level}
             </p>
@@ -68,7 +67,7 @@ const JobOffers = () => {
                 <p
                   className="joboffer__badge"
                   key={index}
-                  onClick={(event) => handleAddFilter(event)}
+                  onClick={(event) => handleAddCategory(event)}
                 >
                   {language}
                 </p>
@@ -79,7 +78,7 @@ const JobOffers = () => {
                 <p
                   className="joboffer__badge"
                   key={index}
-                  onClick={(event) => handleAddFilter(event)}
+                  onClick={(event) => handleAddCategory(event)}
                 >
                   {tool}
                 </p>
