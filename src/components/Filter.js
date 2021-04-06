@@ -4,6 +4,7 @@ import { nanoid } from "@reduxjs/toolkit";
 import "./styles/Filter.css";
 
 import { deleteCategory, clearFilters } from "../features/filters/filtersSlice";
+import { filterByLanguages, filterByLevels, filterByRoles, filterByTools, noFiltersApplied } from "../features/joboffers/jobOffersSlice";
 
 const Filter = () => {
   const { isActive, roles, levels, languages, tools } = useSelector(
@@ -13,7 +14,17 @@ const Filter = () => {
 
   const handleDeleteFilter = (event) => {
     const category = event.target.parentNode.firstChild.firstChild.data;
+
     dispatch(deleteCategory({ category }));
+
+    dispatch(noFiltersApplied());
+
+    if (!roles.includes(category) && roles.length > 0) dispatch(filterByRoles({ roles }));
+    if (!levels.includes(category) && levels.length > 0) dispatch(filterByLevels({ levels }));
+    if (!languages.includes(category) && languages.length > 0)
+      dispatch(filterByLanguages({ languages }));
+    if (!tools.includes(category) && tools.length > 0)
+      dispatch(filterByTools({ tools }));
   };
 
   const handleClearFilter = () => dispatch(clearFilters());
