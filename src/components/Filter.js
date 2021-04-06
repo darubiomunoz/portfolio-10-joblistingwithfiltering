@@ -35,10 +35,11 @@ const Filter = () => {
         {item.map((category) => {
           return (
             <div className="filter__badge" key={nanoid()}>
-              <p className="filter__name">{category}</p>
+              <p className="filter__name" tabIndex="0">{category}</p>
               <button
                 className="filter__button--badge"
                 type="button"
+                aria-label={`Close button. Press enter to delete ${category} from the filters`}
                 onClick={(event) => handleDeleteFilter(event)}
               >
                 X
@@ -53,7 +54,7 @@ const Filter = () => {
   return (
     <>
       {isActive && (
-        <div className="filter">
+        <div className="filter" aria-hidden={isActive ? 'false' : 'true'}>
           <div className="filter__categories">
             {roles.length > 0 && renderBadge(roles)}
             {levels.length > 0 && renderBadge(levels)}
@@ -63,6 +64,7 @@ const Filter = () => {
           <button
             className="filter__button"
             type="button"
+            aria-label="Clear button. Press enter to clear all the filters"
             onClick={handleClearFilter}
           >
             Clear
