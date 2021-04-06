@@ -137,3 +137,20 @@
     font-size: var(--font-size-regular);
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .joboffer {
+    display: flex;
+    align-items: center;
+  }
+
+  .joboffer__item {
+    margin-left: 3rem;
+  }
+
+  .joboffer__image--container {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+  }
+}

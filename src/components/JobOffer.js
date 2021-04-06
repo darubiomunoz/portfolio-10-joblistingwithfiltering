@@ -48,7 +48,7 @@ const JobOffers = () => {
 
   useEffect(() => {
     dispatch(filterByTools({ tools }))
-  }, [tools])
+  }, [tools]) 
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (
