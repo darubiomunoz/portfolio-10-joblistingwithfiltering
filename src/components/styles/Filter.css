@@ -63,7 +63,8 @@
 
 .filter__button:hover,
 .filter__button:focus {
-  
+  color: var(--color-option1);
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 410px) {
