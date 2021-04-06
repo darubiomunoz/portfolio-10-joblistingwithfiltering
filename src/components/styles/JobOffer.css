@@ -141,7 +141,7 @@
 @media screen and (min-width: 1025px) {
   .joboffer {
     max-width: 900px;
-    padding: var(--spacing-small) var(--spacing-large);
+    padding: var(--spacing-regular) var(--spacing-large);
     display: flex;
     align-items: center;
   }
