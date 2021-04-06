@@ -181,11 +181,6 @@ const jobOffersSlice = createSlice({
   },
 });
 
-/*
-      if (tools.length > 0) {
-        return state.filter((joboffer) => tools.includes(joboffer.tools));
-*/
-
 export const { noFiltersApplied, filterByRoles, filterByLevels, filterByLanguages, filterByTools } = jobOffersSlice.actions;
 
 export default jobOffersSlice.reducer;

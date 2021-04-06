@@ -36,17 +36,14 @@ const JobOffers = () => {
 
   useEffect(() => {
     dispatch(filterByRoles({ roles }));
-    console.log('roles');
   }, [roles]);
 
   useEffect(() => {
     dispatch(filterByLevels({ levels }));
-    console.log("levels");
   }, [levels]);
 
   useEffect(() => {
     dispatch(filterByLanguages({ languages }));
-    console.log("languages");
   }, [languages]);
 
   useEffect(() => {
