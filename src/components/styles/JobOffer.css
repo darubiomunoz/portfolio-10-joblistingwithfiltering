@@ -74,6 +74,11 @@
   font-size: var(--spacing-small);
 }
 
+.joboffer__title:hover,
+.joboffer__title:focus {
+  color: var(--color-option1);
+}
+
 .joboffer__extra {
   display: flex;
 }
