@@ -3,12 +3,19 @@ import { useSelector, useDispatch } from "react-redux";
 import "./styles/JobOffer.css";
 
 import { addCategory } from "../features/filters/filtersSlice";
-import { filterBy, noFiltersApplied } from "../features/joboffers/jobOffersSlice";
+import {
+  filterByRoles,
+  filterByLevels,
+  filterByLanguages,
+  noFiltersApplied,
+} from "../features/joboffers/jobOffersSlice";
 
 const JobOffers = () => {
   const dispatch = useDispatch();
   const joboffers = useSelector((state) => state.joboffers);
-  const filters = useSelector((state) => state.filters);
+  const { roles, levels, languages, tools } = useSelector(
+    (state) => state.filters
+  );
 
   const handleAddCategory = (event) => {
     const category = event.target.innerText;
@@ -16,9 +23,30 @@ const JobOffers = () => {
   };
 
   useEffect(() => {
-    if (filters.length === 0) dispatch(noFiltersApplied());
-    if (filters.length > 0) dispatch(filterBy({ filters: filters }));
-  }, [filters]);
+    const empty =
+      roles.length === 0 &&
+      levels.length === 0 &&
+      languages.length === 0 &&
+      tools.length === 0;
+
+    if (empty) dispatch(noFiltersApplied());
+    console.log("all");
+  }, [roles, levels, languages, tools]);
+
+  useEffect(() => {
+    dispatch(filterByRoles({ roles }));
+    console.log('roles');
+  }, [roles]);
+
+  useEffect(() => {
+    dispatch(filterByLevels({ levels }));
+    console.log("levels");
+  }, [levels]);
+
+  useEffect(() => {
+    dispatch(filterByLanguages({ languages }));
+    console.log("languages");
+  }, [languages]);
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (

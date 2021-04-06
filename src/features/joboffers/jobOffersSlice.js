@@ -157,18 +157,30 @@ const jobOffersSlice = createSlice({
   name: "joboffers",
   initialState,
   reducers: {
-    noFiltersApplied: (state) => (state = initialState),
-    filterBy: (state, action) => {
-      const { filters } = action.payload;
-
-      return state.filter((joboffer) => {
-        if (filters.includes(joboffer.role)) return joboffer;
-        else if (filters.includes(joboffer.level)) return joboffer;
-      });
+    noFiltersApplied: (state) => initialState,
+    filterByRoles: (state, action) => {
+      const { roles } = action.payload;
+      
+      if (roles.length > 0) return state.filter((joboffer) => roles.includes(joboffer.role));
     },
+    filterByLevels: (state, action) => {
+      const { levels } = action.payload;
+
+      if (levels.length > 0) return state.filter((joboffer) => levels.includes(joboffer.level));
+    },
+    filterByLanguages: (state, action) => {
+      const { languages } = action.payload;
+
+      if (languages.length > 0) return state.filter(joboffer => languages.every(item => joboffer.languages.includes(item)));
+    }
   },
 });
 
-export const { filterBy, noFiltersApplied } = jobOffersSlice.actions;
+/*
+      if (tools.length > 0) {
+        return state.filter((joboffer) => tools.includes(joboffer.tools));
+*/
+
+export const { filterByRoles, filterByLevels, filterByLanguages, noFiltersApplied } = jobOffersSlice.actions;
 
 export default jobOffersSlice.reducer;
