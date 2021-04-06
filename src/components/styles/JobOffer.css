@@ -72,6 +72,7 @@
 .joboffer__title {
   margin-bottom: var(--spacing-extrasmall);
   font-size: var(--spacing-small);
+  cursor: pointer;
 }
 
 .joboffer__title:hover,
