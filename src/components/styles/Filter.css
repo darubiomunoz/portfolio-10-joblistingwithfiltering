@@ -32,6 +32,7 @@
   border-bottom-left-radius: var(--border-radius-extrasmall);
   background-color: var(--color-option8);
   color: var(--color-option1);
+  cursor: initial;
 }
 
 .filter__button--badge {
@@ -72,5 +73,13 @@
   .filter__button--badge,
   .filter__name {
     font-size: var(--font-size-small);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .filter {
+    max-width: 900px;
+    padding-left: var(--spacing-normal);
+    padding-right: var(--spacing-normal);
   }
 }
