@@ -4,10 +4,11 @@ import "./styles/JobOffer.css";
 
 import { addCategory } from "../features/filters/filtersSlice";
 import {
+  noFiltersApplied,
   filterByRoles,
   filterByLevels,
   filterByLanguages,
-  noFiltersApplied,
+  filterByTools
 } from "../features/joboffers/jobOffersSlice";
 
 const JobOffers = () => {
@@ -47,6 +48,10 @@ const JobOffers = () => {
     dispatch(filterByLanguages({ languages }));
     console.log("languages");
   }, [languages]);
+
+  useEffect(() => {
+    dispatch(filterByTools({ tools }))
+  }, [tools])
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (

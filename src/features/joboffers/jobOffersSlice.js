@@ -172,6 +172,11 @@ const jobOffersSlice = createSlice({
       const { languages } = action.payload;
 
       if (languages.length > 0) return state.filter(joboffer => languages.every(item => joboffer.languages.includes(item)));
+    },
+    filterByTools: (state, action) => {
+      const { tools } = action.payload;
+
+      if (tools.length > 0) return state.filter(joboffer => tools.every(item => joboffer.tools.includes(item)));
     }
   },
 });
@@ -181,6 +186,6 @@ const jobOffersSlice = createSlice({
         return state.filter((joboffer) => tools.includes(joboffer.tools));
 */
 
-export const { filterByRoles, filterByLevels, filterByLanguages, noFiltersApplied } = jobOffersSlice.actions;
+export const { noFiltersApplied, filterByRoles, filterByLevels, filterByLanguages, filterByTools } = jobOffersSlice.actions;
 
 export default jobOffersSlice.reducer;
