@@ -58,36 +58,55 @@ const JobOffers = () => {
             className="joboffer__logo"
             src={joboffer.logo}
             loading="lazy"
-            alt="company's logo"
+            tabIndex="0"
+            alt={`${joboffer.company}'s logo`}
           />
         </figure>
         <section className="joboffer__item">
           <section className="joboffer__details">
             <div className="joboffer__info">
-              <h2 className="joboffer__company">{joboffer.company}</h2>
-              {joboffer.new && <p className="joboffer__new">New!</p>}
+              <h2 className="joboffer__company" tabIndex="0">
+                {joboffer.company}
+              </h2>
+              {joboffer.new && (
+                <p className="joboffer__new" tabIndex="0">
+                  New!
+                </p>
+              )}
               {joboffer.featured && (
-                <p className="joboffer__featured">Featured</p>
+                <p className="joboffer__featured" tabIndex="0">
+                  Featured
+                </p>
               )}
             </div>
-            <h3 className="joboffer__title">{joboffer.position}</h3>
+            <h3 className="joboffer__title" tabIndex="0">
+              {joboffer.position}
+            </h3>
             <div className="joboffer__extra">
-              <p className="joboffer__status1">{joboffer.postedAt}</p>
+              <p className="joboffer__status1" tabIndex="0">
+                {joboffer.postedAt}
+              </p>
               &#8226;
-              <p className="joboffer__status2">{joboffer.contract}</p>
+              <p className="joboffer__status2" tabIndex="0">
+                {joboffer.contract}
+              </p>
               &#8226;
-              <p className="joboffer__status3">{joboffer.location}</p>
+              <p className="joboffer__status3" tabIndex="0">
+                {joboffer.location}
+              </p>
             </div>
           </section>
           <section className="joboffer__keywords">
             <p
-              className="joboffer__badge"
+              className="joboffer__badge "
+              tabIndex="0"
               onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.role}
             </p>
             <p
               className="joboffer__badge"
+              tabIndex="0"
               onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.level}
@@ -97,6 +116,7 @@ const JobOffers = () => {
                 <p
                   className="joboffer__badge"
                   key={index}
+                  tabIndex="0"
                   onClick={(event) => handleAddCategory(event)}
                 >
                   {language}
@@ -108,6 +128,7 @@ const JobOffers = () => {
                 <p
                   className="joboffer__badge"
                   key={index}
+                  tabIndex="0"
                   onClick={(event) => handleAddCategory(event)}
                 >
                   {tool}
