@@ -46,6 +46,11 @@
   cursor: pointer;
 }
 
+.filter__button--badge:hover,
+.filter__button--badge:focus {
+  background-color: var(--color-option5);
+}
+
 .filter__button {
   width: fit-content;
   height: fit-content;
@@ -54,6 +59,11 @@
   color: var(--color-option4);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  
 }
 
 @media screen and (min-width: 410px) {
