@@ -21,7 +21,7 @@
 }
 
 .filter__badge {
-  display: flex;
+  display: flex; 
 }
 
 .filter__name {
@@ -55,3 +55,11 @@
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
+
+@media screen and (min-width: 410px) {
+  .filter__button,
+  .filter__button--badge,
+  .filter__name {
+    font-size: var(--font-size-small);
+  }
+} 

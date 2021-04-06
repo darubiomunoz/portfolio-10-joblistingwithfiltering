@@ -20,7 +20,7 @@
   width: 3rem;
   height: 3rem;
   position: absolute;
-  top: -1.5rem;
+  top: -1.5rem; 
   left: 1rem;
 }
 
@@ -115,4 +115,20 @@
 .joboffer__badge:hover {
   background-color: var(--color-option1);
   color: var(--color-option3);
+}
+
+@media screen and (min-width: 410px) {
+  .joboffer__company,
+  .joboffer__new,
+  .joboffer__featured,
+  .joboffer__status1,
+  .joboffer__status2,
+  .joboffer__status3,
+  .joboffer__badge {
+    font-size: var(--font-size-small);
+  }
+
+  .joboffer__title {
+    font-size: var(--font-size-regular);
+  }
 }
