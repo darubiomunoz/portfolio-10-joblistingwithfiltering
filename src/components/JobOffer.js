@@ -8,7 +8,7 @@ import {
   filterByRoles,
   filterByLevels,
   filterByLanguages,
-  filterByTools
+  filterByTools,
 } from "../features/joboffers/jobOffersSlice";
 
 const JobOffers = () => {
@@ -47,8 +47,8 @@ const JobOffers = () => {
   }, [languages]);
 
   useEffect(() => {
-    dispatch(filterByTools({ tools }))
-  }, [tools]) 
+    dispatch(filterByTools({ tools }));
+  }, [tools]);
 
   const renderJobOffers = joboffers.map((joboffer) => {
     return (
@@ -100,6 +100,7 @@ const JobOffers = () => {
             <p
               className="joboffer__badge "
               tabIndex="0"
+              aria-label={`${joboffer.role}. Press enter to filter all job offers by ${joboffer.role}`}
               onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.role}
@@ -107,6 +108,7 @@ const JobOffers = () => {
             <p
               className="joboffer__badge"
               tabIndex="0"
+              aria-label={`${joboffer.level}. Press enter to filter all job offers by ${joboffer.level}`}
               onClick={(event) => handleAddCategory(event)}
             >
               {joboffer.level}
@@ -117,6 +119,7 @@ const JobOffers = () => {
                   className="joboffer__badge"
                   key={index}
                   tabIndex="0"
+                  aria-label={`${language}. Press enter to filter all job offers by ${language}`}
                   onClick={(event) => handleAddCategory(event)}
                 >
                   {language}
@@ -129,6 +132,7 @@ const JobOffers = () => {
                   className="joboffer__badge"
                   key={index}
                   tabIndex="0"
+                  aria-label={`${tool}. Press enter to filter all job offers by ${tool}`}
                   onClick={(event) => handleAddCategory(event)}
                 >
                   {tool}
