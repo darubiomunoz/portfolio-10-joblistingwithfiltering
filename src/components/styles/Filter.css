@@ -21,6 +21,7 @@
 }
 
 .filter__badge {
+  margin-right: var(--spacing-extrasmall);
   display: flex; 
 }
 
@@ -58,6 +59,7 @@
   border-style: none;
   background-color: transparent;
   color: var(--color-option4);
+  font-size: var(--font-size-extrasmall);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 }

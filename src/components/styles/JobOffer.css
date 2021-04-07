@@ -86,16 +86,19 @@
 
 .joboffer__status1 {
   margin-right: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
   color: var(--color-option4);
 }
 
 .joboffer__status2 {
   margin-right: var(--spacing-extrasmall);
   margin-left: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
   color: var(--color-option4);
 }
 .joboffer__status3 {
   margin-left: var(--spacing-extrasmall);
+  font-size: var(--font-size-extrasmall);
   color: var(--color-option4);
 }
 
