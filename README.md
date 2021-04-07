@@ -2,10 +2,10 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
-Project Link: [https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering](https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering)
+Project Link: [https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering](https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering)
 <br />
 <p align="center">
-  <a href="https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering">
+  <a href="https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering">
     <img src="./src/assets/images/readme-logo.svg" alt="Logo" width="200" height="200">
   </a>
   <h1 align="center">Job Listing</h1>
@@ -79,7 +79,7 @@ If you want to check out the website in production with github pages visit the l
 
 * Link to the project:
   ```sh
-  https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering
+  https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering
   ```
 
 ### Installation  :exclamation:
@@ -214,7 +214,7 @@ Diego Rubio
 [Linkedin](https://www.linkedin.com/in/darmdev/)
 darubiomunoz@gmail.com
 
-Project Link: [https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering](https://github.com/darubiomunoz/portfolio-10-joblistingwithfiltering)
+Project Link: [https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering](https://darubiomunoz.github.io/portfolio-10-joblistingwithfiltering)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## 9. Acknowledgements :clap:
